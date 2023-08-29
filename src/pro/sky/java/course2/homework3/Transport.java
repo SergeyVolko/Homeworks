@@ -10,6 +10,7 @@ public abstract class Transport implements ServiceAction {
         this.wheelsCount = wheelsCount;
     }
 
+    @Override
     public void service() {
         System.out.println("Обслуживаем " + modelName);
         for (int i = 0; i < wheelsCount; i++) {
