@@ -10,19 +10,15 @@ public abstract class Transport implements ServiceAction {
         this.wheelsCount = wheelsCount;
     }
 
-    @Override
+    public void service() {
+        System.out.println("Обслуживаем " + modelName);
+        for (int i = 0; i < wheelsCount; i++) {
+            updateTyre();
+        }
+    }
+
     public void updateTyre() {
         System.out.println("Меняем покрышку");
-    }
-
-    @Override
-    public void checkEngine() {
-        System.out.println("Двигателя нет");
-    }
-
-    @Override
-    public void checkTrailer() {
-        System.out.println("Прицепа нет");
     }
 
     public String getModelName() {
