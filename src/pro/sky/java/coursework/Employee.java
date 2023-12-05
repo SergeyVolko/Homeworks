@@ -1,7 +1,5 @@
 package pro.sky.java.coursework;
 
-import java.util.Objects;
-
 public class Employee {
     private static int counterId;
     public static final int FIRST_DEPARTMENT = 1;
